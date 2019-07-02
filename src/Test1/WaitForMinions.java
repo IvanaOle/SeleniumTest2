@@ -7,6 +7,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitForMinions {
 
@@ -21,11 +23,15 @@ public class WaitForMinions {
 
     @Test
     public void waitForMinions(){
-        driver.findElement(By.xpath("//input[contains(@type,'number')]")).sendKeys("10");
+        int numberOfMinions = (int)(Math.random() * 50 + 1); //cannot contain 0?
+        driver.findElement(By.xpath("//input[contains(@type,'number')]")).sendKeys(Integer.toString(numberOfMinions));
         driver.findElement(By.xpath("//button[contains(@class,'btn')]")).click();
+        new WebDriverWait(driver,10)
+                .withMessage("Timeout waiting for number of minions to be random")
+                .until(ExpectedConditions.numberOfElementsToBe(By.xpath("//div[@class='minions']//img"),numberOfMinions));
         driver.findElement(By.xpath("//div[@class='minions']//img"));
-        //Assert.assertEquals(10,driver.findElement(By.xpath("//div[@class='minions']//img")).size());
 
+        Assert.assertEquals(numberOfMinions,driver.findElements(By.xpath("//div[@class='minions']//img")).size());
     }
 
     @After
