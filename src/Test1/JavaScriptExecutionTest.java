@@ -12,7 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.List;
 
 public class JavaScriptExecutionTest {
-    String Base_Url = "http://localhost:8888/playground2-master/tabulka.php";
+    private String Base_Url = "http://localhost:8888/playground2-master/tabulka.php";
     private WebDriver driver;
 
     @Before
@@ -34,7 +34,6 @@ public class JavaScriptExecutionTest {
 
     @After
     public void tearDown(){
-
 
     }
     private void highLight(WebElement row) {
