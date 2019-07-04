@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitForIt {
-    String Base_Url = "http://localhost:8888/playground2-master/waitforit.php";
+    private String Base_Url = "http://localhost:8888/waitforit.php";
     private  WebDriver driver;
 
     @Before

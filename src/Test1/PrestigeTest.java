@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PrestigeTest {
-    String Base_Url = "http://localhost:8888/playground2-master/prestige.php";
+    private String Base_Url = "http://localhost:8888/prestige.php";
 
     public void setDriver(WebDriver driver) {
         this.driver = driver;

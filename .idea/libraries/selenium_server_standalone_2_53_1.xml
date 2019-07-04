@@ -1,12 +1,10 @@
 <component name="libraryTable">
-  <library name="playground">
+  <library name="selenium-server-standalone-2.53.1">
     <CLASSES>
       <root url="jar://$USER_HOME$/Desktop/playground/selenium-server-standalone-2.53.1.jar!/" />
       <root url="jar://$USER_HOME$/Desktop/playground/selenium-server-standalone-3.141.59.jar!/" />
-      <root url="file://$USER_HOME$/Desktop/playground" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
-    <jarDirectory url="file://$USER_HOME$/Desktop/playground" recursive="false" />
   </library>
 </component>
