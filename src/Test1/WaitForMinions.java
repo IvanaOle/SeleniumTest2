@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitForMinions {
 
-    String Base_Url = "http://localhost:8888/playground2-master/minions.php";
+    private String Base_Url = "http://localhost:8888/minions.php";
     private WebDriver driver;
 
     @Before

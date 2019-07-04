@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class ScrollToTest {
-    private String Base_Url = "http://localhost:8888/playground2-master/tabulka.php";
+    private String Base_Url = "http://localhost:8888/tabulka.php";
     private WebDriver driver;
 
     @Before

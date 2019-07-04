@@ -12,7 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.List;
 
 public class JavaScriptExecutionTest {
-    private String Base_Url = "http://localhost:8888/playground2-master/tabulka.php";
+    private String Base_Url = "http://localhost:8888/tabulka.php";
     private WebDriver driver;
 
     @Before
