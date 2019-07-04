@@ -32,7 +32,6 @@ public class ScrollToTest {
         js.executeScript("arguments[0].scrollIntoView(true)",lastRow);
 
     }
-
     @After
     public void tearDown() {
 
